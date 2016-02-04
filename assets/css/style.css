@@ -6,15 +6,22 @@
   background-color: #262626;
   border: 0;
   height: 90px;
-  opacity: 0.7;
+  opacity: 1;
+}
+
+.navbar > .container {
+  padding-top: 1%;
 }
 
 .navbar h1 {
-  color: white;
+  display: inline;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 340%;
+  color: #fff;
 }
 
 .green {
-  color: #88F159;
+  color: #8cc63e;
 }
 /* /navbar style */
 
