@@ -1,0 +1,26 @@
+/* navbar style */
+.navbar {
+  background-color: #262626;
+  border: 0;
+  height: 90px;
+  opacity: 0.7;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.green {
+  color: #88F159;
+}
+/* /navbar style */
+
+/* banner */
+.banner {
+  padding: 0;
+}
+
+.banner img {
+  width: 100%;
+}
+/* /banner */
