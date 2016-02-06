@@ -1,12 +1,16 @@
 .main {
   padding: 0;
 }
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
 /* navbar style */
 .navbar {
   background-color: #262626;
   border: 0;
   height: 90px;
-  opacity: 1;
 }
 
 .navbar > .container {
@@ -20,19 +24,34 @@
   color: #fff;
 }
 
-.test {
+.nav-text {
+  font-size: 112%;
+  font-family: 'Roboto', sans-serif;
   display: inline-block;
   padding: 17px 26px;
   float: right;
-  border: 1px solid #8cc63e;
   color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.nav-text > a {
+  transition: all 0.3s;
+}
+
+.nav-text:hover > a {
+  color: #8cc63e;
+}
+
+/*styling for green outline button*/
+.button {
+  border: 1px solid #8cc63e;
   letter-spacing: 3px;
 }
 
 .green {
   color: #8cc63e;
 }
-/* /navbar style */
+/* end navbar style */
 
 /* banner */
 .banner {
@@ -42,4 +61,4 @@
 .banner img {
   width: 100%;
 }
-/* /banner */
+/* end banner */
