@@ -10,11 +10,10 @@ a, a:hover {
 .navbar, .navbar-collapse {
   background-color: #262626;
   border: 0;
-  min-height: 80px;
 }
 
-.navbar-collapse {
-  
+.navbar-header {
+  min-height: 70px;
 }
 
 /*collapsed menu style*/
