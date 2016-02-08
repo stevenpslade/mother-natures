@@ -1,5 +1,6 @@
 .main {
   padding: 0;
+  background-color: #262626;
 }
 
 a, a:hover {
@@ -71,3 +72,56 @@ a, a:hover {
   width: 100%;
 }
 /* end banner */
+
+/* home page content */
+.row > div {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.middle {
+  margin-top: 30%;
+  margin-bottom: 30%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+}
+
+@media(max-width:767px){
+  .middle {
+    /*background-color: red;*/
+  }
+}
+
+.light-background {
+  background-color: #ebebeb;
+}
+
+.light-background p, .light-background div.button {
+  color: #000;
+}
+
+.middle h2 {
+  letter-spacing: 2px;
+  color: #8cc63e;
+}
+
+.middle p {
+  font-size: 106%;
+  padding: 10px;
+}
+
+.row .button {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 17px 26px;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #8cc63e;
+  letter-spacing: 3px;
+}
+/* end home page content */
