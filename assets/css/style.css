@@ -1,3 +1,24 @@
+
+section.module.parallax {
+  height: 100vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-1 {
+  background-image: url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG);
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .main {
   overflow: hidden;
   padding: 0;
@@ -170,3 +191,10 @@ img {
   color: #8cc63e;
 }
 /* end home page content */
+
+/* footer */
+/*footer {
+  width: inherit;
+  min-height: 100px;
+}*/
+/* end footer */
