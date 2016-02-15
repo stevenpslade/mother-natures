@@ -1,3 +1,10 @@
+html { 
+  background: url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /*parallax scrolling banner*/
 section.module.parallax {
   height: 100vh;
@@ -19,8 +26,9 @@ section.module.parallax h1 {
   position: absolute;
   width: 100%;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
+  font-family: "Helvetica Neue";
+  color: #fff;
+  font-size: 60px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -31,7 +39,6 @@ section.module.parallax h1 {
 .main {
   overflow: hidden;
   padding: 0;
-  background-color: #262626;
 }
 
 .row {
@@ -172,6 +179,10 @@ img {
   background-color: #ebebeb;
 }
 
+.dark-background {
+  background-color: #262626;
+}
+
 .light-background p, .light-background div.button {
   color: #000;
 }
@@ -201,9 +212,11 @@ img {
 }
 /* end home page content */
 
-/* footer */
-/*footer {
-  width: inherit;
-  min-height: 100px;
-}*/
-/* end footer 
+/*menu*/
+#menu {
+  min-height: 1200px;
+  background-color: #000;
+  opacity: 0.7;
+  margin-bottom: 100px;
+}
+/*end menu*/
