@@ -1,29 +1,18 @@
 html { 
-  background: url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-/*parallax scrolling banner*/
-section.module.parallax {
-  height: 100vh;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-section.module.parallax-1 {
-  background-image: url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG);
-}
-.banner-content {
+.background-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 20%;
 }
-section.module.parallax h1 {
-  position: absolute;
+/*banner*/
+.background-overlay h1 {
+  position: relative;
   width: 100%;
   color: #fff;
   font-family: "Helvetica Neue";
@@ -33,6 +22,10 @@ section.module.parallax h1 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.banner-content {
+  height: 100vh;
+  padding-top: 20%;
 }
 /*end banner*/
 
@@ -215,8 +208,13 @@ img {
 /*menu*/
 #menu {
   min-height: 1200px;
-  background-color: #000;
-  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 100px;
+  margin-top: 170px;
+  text-align: center
+}
+
+#menu > h1 {
+  width: initial;
 }
 /*end menu*/
