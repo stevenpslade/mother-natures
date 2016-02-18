@@ -217,4 +217,10 @@ img {
 #menu > h1 {
   width: initial;
 }
+
+#menu p {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
 /*end menu*/
