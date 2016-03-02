@@ -207,20 +207,39 @@ img {
 
 /*menu*/
 #menu {
-  min-height: 1200px;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 100px;
   margin-top: 170px;
-  text-align: center
+  text-align: center;
 }
 
 #menu > h1 {
   width: initial;
 }
 
-#menu p {
+
+#menu-container {
+  background-color: #fbfbfb;
+}
+
+#menu-container {
+  padding: 6%;
+}
+
+#menu-container p {
+  margin-bottom: 0;
   font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  font-weight: 300;
+  color: #000;
+  text-align: left;
 }
+
+#menu-container  p + p {
+  margin-bottom: 5%;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
 /*end menu*/
