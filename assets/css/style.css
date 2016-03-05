@@ -5,6 +5,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
 .background-overlay {
   position: absolute;
   width: 100%;
@@ -218,12 +219,8 @@ img {
   width: initial;
 }
 
-
-#menu-container {
+#menu-container, #location-container {
   background-color: #fbfbfb;
-}
-
-#menu-container {
   padding: 6%;
 }
 
