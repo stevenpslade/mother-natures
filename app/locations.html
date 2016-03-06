@@ -56,8 +56,38 @@
         <div class="row">
           <div id="menu" class="col-xs-12 col-md-10 col-md-offset-1">
           <h1>LOCATIONS</h1>
+          <a href="#rothesay-ave"><p class="button">rothesay ave</p></a>
+          <a href="#brunswick"><p class="button">brunswick square</p></a>
+          <a href="#mcallister"><p class="button">mcallister place</p></a>
+          <span id="rothesay-ave"></span>
           <div class="row">
             <div id="location-container" class="col-xs-12">
+              <!-- three locations: rothesay ave, mcallister place, brunswick square -->
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <h2 class="green">Mother Nature's<br/>Pita Bakery and Restaurant</h2>
+                  <p>337 Rothesay Ave<br/>Saint John, NB<br/>E2J 2C3<br/>(506) 634-7482</p>
+                </div>
+                <div id="map-rothesay-ave" class="col-xs-12 col-md-6"></div>
+              </div>
+              <span id="brunswick"></span>
+              <hr/>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <h2 class="green">Mother Nature's<br/>Brunswick Square</h2>
+                  <p>1 Germain St<br/>Saint John, NB<br/>E2L 4V1<br/>(506) 634-0955</p>
+                </div>
+                <div id="map-brunswick" class="col-xs-12 col-md-6"></div>
+              </div>
+              <span id="mcallister"></span>
+              <hr/>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <h2 class="green">Mother Nature's<br/>McAlliser Place</h2>
+                  <p>519 Westmorland Rd<br/>Saint John, NB<br/>E2J 3W9<br/>(506) 634-6899</p>
+                </div>
+                <div id="map-mcallister" class="col-xs-12 col-md-6"></div>
+              </div>
             </div>
           </div>
           </div>
@@ -70,5 +100,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/mother-natures.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4eyKfD82763hsH68mnNUFXJ4sp_hOuxs&callback=initMap"></script>
   </body>
 </html>

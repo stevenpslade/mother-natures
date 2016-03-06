@@ -199,6 +199,7 @@ img {
   display: inline-block;
   border: 1px solid #8cc63e;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .row .button:hover {
@@ -238,5 +239,23 @@ img {
   font-weight: 100;
   font-size: 1.3em;
 }
-
 /*end menu*/
+
+/*location/maps*/
+#map-rothesay-ave, #map-mcallister, #map-brunswick {
+  height: 25em;
+}
+
+#location-container .row > div {
+  padding: 4%;
+}
+
+#location-container p {
+  font-weight: 300;
+  font-size: 1.3em;
+}
+/*end location*/
+
+
+
+
