@@ -128,6 +128,7 @@ a, a:hover {
 .navbar-default .navbar-nav > li.button > a {
   border: 1px solid #8cc63e;
   letter-spacing: 3px;
+  border-radius: 33px;
 }
 
 .green {
@@ -198,6 +199,7 @@ img {
   color: #fff;
   display: inline-block;
   border: 1px solid #8cc63e;
+  border-radius: 33px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -212,7 +214,7 @@ img {
   height: auto;
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 100px;
-  margin-top: 170px;
+  margin-top: 13%;
   text-align: center;
 }
 
@@ -256,6 +258,13 @@ img {
 }
 /*end location*/
 
-
-
+/* footer */
+footer, footer i {
+  background-color: #262626;
+  height: 20%;
+  text-align: center;
+  font-size: 2em;
+  padding: 3%
+}
+/* end footer */
 
