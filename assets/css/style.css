@@ -171,7 +171,7 @@ img {
 }
 
 .light-background {
-  background-color: #ebebeb;
+  background-color: #fff;
 }
 
 .dark-background {
@@ -261,10 +261,22 @@ img {
 /* footer */
 footer, footer i {
   background-color: #262626;
-  height: 20%;
+  height: auto;
   text-align: center;
   font-size: 2em;
   padding: 3%
+}
+
+footer p {
+  font-size: .5em;
+}
+
+footer i {
+  cursor: pointer;
+}
+
+footer .row p.button {
+  display: none;
 }
 /* end footer */
 

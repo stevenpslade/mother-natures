@@ -12,8 +12,20 @@ $(function() {
     }
   });
 
+  //footer icons to display phone numbers and email on click
+  $(".fa-envelope-o").on("click", function() {
+    $("#phone").hide();
+    $("#mail").toggle();
+  });
+
+  $(".fa-phone").on("click", function() {
+    $("#mail").hide();
+    $("#phone").toggle();
+  });
+
 });
 
+//google maps API
 var map1;
 var map2;
 var map3;
@@ -22,36 +34,33 @@ function initMap() {
   var mapRothesayAve = {lat: 45.299253, lng: -66.038516}
   var mapMacallister = {lat: 45.307627, lng: -66.014442}
   var mapBrunswick = {lat: 45.274205, lng: -66.060968}
-  map1 = new google.maps.Map(document.getElementById('map-rothesay-ave'), {
+  map1 = new google.maps.Map(document.getElementById("map-rothesay-ave"), {
     center: mapRothesayAve,
     zoom: 15
   });
 
   var marker = new google.maps.Marker({
     position: mapRothesayAve,
-    map: map1,
-    title: 'Hello World!'
+    map: map1
   });
 
-  map2 = new google.maps.Map(document.getElementById('map-mcallister'), {
+  map2 = new google.maps.Map(document.getElementById("map-mcallister"), {
     center: mapMacallister,
     zoom: 15
   });
 
   var marker = new google.maps.Marker({
     position: mapMacallister,
-    map: map2,
-    title: 'Hello World!'
+    map: map2
   });
 
-  map3 = new google.maps.Map(document.getElementById('map-brunswick'), {
+  map3 = new google.maps.Map(document.getElementById("map-brunswick"), {
     center: mapBrunswick,
     zoom: 15
   });
 
   var marker = new google.maps.Marker({
     position: mapBrunswick,
-    map: map3,
-    title: 'Hello World!'
+    map: map3
   });
 }
