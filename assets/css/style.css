@@ -1,5 +1,5 @@
 html { 
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -216,6 +216,10 @@ img {
   margin-bottom: 100px;
   margin-top: 13%;
   text-align: center;
+}
+
+#menu .button {
+  margin: 1%;
 }
 
 #menu > h1 {
