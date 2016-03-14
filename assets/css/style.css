@@ -15,13 +15,31 @@ body {
   }
 }
 
-.jumbotron {
-  margin: 0;
-}
-
 h1, h2, h3, h4, h5, h6, p {
  font-family: 'Roboto', sans-serif;
 }
+
+/* welcome section style */
+.jumbotron {
+  margin: 0;
+  background-color: #262626;
+  color: #8cc63e;
+  border-radius: 0!important;
+}
+
+.jumbotron .container {
+  padding: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 200;
+  width: 50%;
+}
+
+.jumbotron p {
+  font-size: 1em;
+}
+/* welcome section style */
 
 .background-overlay {
   position: absolute;
@@ -33,13 +51,16 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   width: 100%;
   color: #fff;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 700;
+  font-weight: 200;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+#home .background-overlay h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .banner-content {
   height: 100vh;
   padding-top: 20%;
@@ -112,7 +133,8 @@ a, a:hover {
 .navbar h1 {
   display: inline;
   font-family: 'Abril Fatface', cursive;
-  font-size: 3em;
+  font-size: 4em;
+  line-height: 65%;
   color: #fff;
 }
 
@@ -120,6 +142,7 @@ a, a:hover {
   .navbar h1 {
     font-size: 10vw;
     margin-left: 20px;
+    line-height: 1.1;
   }
 }
 
@@ -129,11 +152,12 @@ a, a:hover {
 
 .navbar-default .navbar-nav > li > a {
   font-size: 112%;
+  font-weight: 300;
   font-family: 'Roboto', sans-serif;
   display: inline-block;
   color: #fff;
   letter-spacing: 1.5px;
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -142,9 +166,8 @@ a, a:hover {
 
 /*styling for green outline button*/
 .navbar-default .navbar-nav > li.button > a {
-  border: 1px solid #8cc63e;
+  border-bottom: 1px solid #8cc63e;
   letter-spacing: 3px;
-  border-radius: 33px;
 }
 
 .green {
@@ -214,10 +237,16 @@ img {
   padding: 17px 26px;
   color: #fff;
   display: inline-block;
-  border: 1px solid #8cc63e;
+  border: 2px solid #8cc63e;
   border-radius: 33px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+#menu .button {
+  display: none;
+  font-weight: 100;
+  font-size: 90%;
 }
 
 .row .button:hover {
@@ -244,7 +273,7 @@ img {
 
 #menu-container, #location-container {
   background-color: #fbfbfb;
-  padding: 6%;
+  padding: 2% 6% 6% 6%;
 }
 
 #menu-container p {
