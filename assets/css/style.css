@@ -6,6 +6,23 @@ html {
   background-size: cover;
 }
 
+body {
+  padding-top: 50px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ font-family: 'Roboto', sans-serif;
+}
+
 .background-overlay {
   position: absolute;
   width: 100%;
@@ -16,7 +33,6 @@ html {
   position: relative;
   width: 100%;
   color: #fff;
-  font-family: "Helvetica Neue";
   color: #fff;
   font-size: 60px;
   font-weight: 700;
