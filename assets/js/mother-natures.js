@@ -7,7 +7,7 @@ $(function() {
     var re = new RegExp(navItem);
     if (re.test(window.location.href)) {
       $(this).addClass("button");
-    } else if (/index/.test(window.location.href) && navItem === "menu") {
+    } else if (/index/.test(window.location.href) && navItem === "home") {
       $(this).addClass("button");
     }
   });

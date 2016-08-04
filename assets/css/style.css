@@ -1,5 +1,5 @@
 html { 
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/ceasar-salad.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -157,7 +157,7 @@ a, a:hover {
   float: right;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, #dropdownAbout {
   font-size: 112%;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
@@ -167,7 +167,7 @@ a, a:hover {
   transition: all 0.8s;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover, #dropdownAbout:hover {
   color: #8cc63e;
 }
 
