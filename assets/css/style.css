@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media(max-width:767px){
   .background-overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(http://static1.squarespace.com/static/561ebe6de4b043ff3d74da27/t/561ff2fce4b0662b883e109b/1444934511103/IMG_2945.JPG) no-repeat center center fixed; 
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/ceasar-salad.jpg") no-repeat center center fixed; 
   }
 }
 
