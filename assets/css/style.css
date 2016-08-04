@@ -47,11 +47,11 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
 }
 
-@media(max-width:767px){
+/*@media(max-width:767px){
   .background-overlay {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/ceasar-salad.jpg") no-repeat center center fixed; 
   }
-}
+}*/
 
 /*banner*/
 .background-overlay h1 {
