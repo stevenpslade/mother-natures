@@ -331,7 +331,7 @@ ul#photo-grid li {
   padding: 3px;
 }
 
-/*moda*/
+/*modal*/
 .modal-wrapper {
   display: none;
   position: fixed;
@@ -362,6 +362,11 @@ ul#photo-grid li {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
   
   background-color:white;
+}
+
+a.controls i {
+  font-size: 6rem;
+  color: white!important;
 }
 /*end modal*/
 
