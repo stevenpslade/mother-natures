@@ -320,6 +320,18 @@ img {
 }
 /*end location*/
 
+/*photos*/
+ul#photo-grid {
+  list-style: none;
+}
+
+ul#photo-grid li {
+  overflow: hidden;
+  height: 147px;
+  padding: 3px;
+}
+/*end photos*/
+
 /* footer */
 footer, footer i {
   background-color: #262626;
