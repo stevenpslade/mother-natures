@@ -23,6 +23,21 @@ $(function() {
     $("#phone").toggle();
   });
 
+  //photo viewer modal
+  $("#photo-grid li img").on("click", function() {
+    var src = $(this).attr('src');
+    var img = '<img src="' + src + '"/>';
+
+    //give img and show the model
+    $(".modal").html(img);
+    $(".modal-wrapper").show();
+  });
+
+  //hide modal
+  $(".modal-wrapper").on("click", function() {
+    $(".modal-wrapper").hide();
+  });
+
 });
 
 //google maps API
