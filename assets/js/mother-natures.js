@@ -1,4 +1,8 @@
-$(document).on('click', 'a.controls', function(){
+$(document).on('click', 'i.fa-times', function() {
+  $(".modal-wrapper").hide();
+});
+
+$(document).on('click', 'a.controls', function() {
   var index = $(this).attr('href');
   var src = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
   $('.modal img').attr('src', src);
@@ -66,8 +70,9 @@ $(function() {
     var index = $(this).parent('li').index();
     var rightArrow = '<a class="controls next" href="'+ (index+2) + '"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>';
     var leftArrow = '<a class="controls previous" href="' + (index) + '"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>';
+    var closeIcon = '<i class="fa fa-times" aria-hidden="true"></i>';
 
-    var html = leftArrow + img + rightArrow;
+    var html = closeIcon + leftArrow + img + rightArrow;
 
     //give img and show the model
     $(".modal-wrapper").html(html).show();
