@@ -2,6 +2,15 @@ $(document).on('click', 'i.fa-times', function() {
   $(".modal-wrapper").hide();
 });
 
+$("body").keydown(function(e) {
+  if(e.which == 37) { // left     
+      $("a.previous").trigger("click");
+  }
+  else if(e.which == 39) { // right     
+      $("a.next").trigger("click");
+  }
+});
+
 $(document).on('click', 'a.controls', function() {
   var index = $(this).attr('href');
   var src = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
