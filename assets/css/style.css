@@ -367,6 +367,7 @@ ul#photo-grid li {
   display: inline-block;
   vertical-align: middle;
   width: 65%;
+  max-height: 60rem;
   margin: 0 3rem 0 3rem;
   
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
@@ -408,7 +409,7 @@ i.fa-times {
   margin-bottom: 0;
 }
 
-hr {
+#about-page hr {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -451,6 +452,21 @@ hr {
   text-align: left;
   margin-left: 25%;
 }
+
+.story-text {
+  margin-top: 10%;
+}
+
+.story-text p {
+  font-size: 120%;
+  font-weight: 300;
+  color: #fff;
+}
+
+.light-background p {
+  color: #000;
+}
+
 /* end about page */
 
 /* footer */
