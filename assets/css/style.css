@@ -330,6 +330,17 @@ ul#photo-grid li {
   overflow: hidden;
   height: 147px;
   padding: 3px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+#photo-grid li:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  padding: 0;
+  -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
 }
 
 /*modal*/
@@ -395,6 +406,50 @@ i.fa-times {
 .about-middle {
   margin-top: 10%; 
   margin-bottom: 0;
+}
+
+hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  height: 1px;
+  background-color: #8cc63e;
+}
+
+.about-container {
+  color: #262626;
+  font-weight: 300;
+}
+
+.about-container .center {
+  text-align: center;
+}
+
+.about-container img {
+  width: 70%;
+}
+
+.about-container .info {
+  padding-left: 10%;
+}
+
+.about-container h2 {
+  font-size: 45px;
+}
+
+.about-container p {
+  font-size: 20px;
+}
+
+.about-container li {
+  font-size: 35px;
+}
+
+.about-container ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 25%;
 }
 /* end about page */
 
