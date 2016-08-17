@@ -9,6 +9,9 @@ $("body").keydown(function(e) {
   else if(e.which == 39) { // right     
       $("a.next").trigger("click");
   }
+  else if(e.which == 27) { // esc   
+      $(".modal-wrapper").hide();
+  }
 });
 
 $(document).on('click', 'a.controls', function() {
