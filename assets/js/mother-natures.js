@@ -51,14 +51,17 @@ $(document).on('click', 'a.controls', function() {
 
 $(function() {
   
-  // switch green box depending on which page you are viewing
+  // switch green line depending on which page you are viewing
   // possibly make button class present but hidden to avoid choppy entrance
   $("li").each(function(index) {
     var navItem = $(this).text().toLowerCase();;
     var re = new RegExp(navItem);
+    console.log(navItem);
     if (re.test(window.location.href)) {
       $(this).addClass("button");
     } else if (/index/.test(window.location.href) && navItem === "home") {
+      $(this).addClass("button");
+    } else if (/about/.test(window.location.href) && navItem.includes("about")) {
       $(this).addClass("button");
     }
   });
