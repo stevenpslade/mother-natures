@@ -13,7 +13,7 @@ $("body").keydown(function(e) {
       $(".modal-wrapper").hide();
   }
 });
-
+        
 $(document).on('click', 'a.controls', function() {
   var index = $(this).attr('href');
   var src = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
@@ -76,7 +76,8 @@ $(function() {
     $("#phone").toggle();
   });
 
-  //photo viewer modal
+  //photo viewer modal for desktop only
+  var width = $(window).width();
   $("#photo-grid li img").on("click", function() {
     var src = $(this).attr('src');
     var img = '<div class="modal"><img src="' + src + '"/></div>';
@@ -89,15 +90,12 @@ $(function() {
     var html = closeIcon + leftArrow + img + rightArrow;
 
     //give img and show the model
-    $(".modal-wrapper").html(html).show();
+    if (width > 425) {
+      $(".modal-wrapper").html(html).show();
+    }
     //this will hide or show the correct arrows:
     $('a.controls').trigger('click');
   });
-
-  //hide modal
-  // $(".modal-wrapper").on("click", function() {
-  //   $(".modal-wrapper").hide();
-  // });
 
 });
 

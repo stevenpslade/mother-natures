@@ -324,6 +324,7 @@ img {
 /*photos*/
 ul#photo-grid {
   list-style: none;
+  padding: 0;
 }
 
 ul#photo-grid li {
@@ -335,10 +336,6 @@ ul#photo-grid li {
 }
 
 @media (max-width:500px) {
-    ul#photo-grid {
-      padding: 0;
-    }
-
     ul#photo-grid li {
     overflow: visible;
     height: auto;
