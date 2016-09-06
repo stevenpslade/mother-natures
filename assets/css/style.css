@@ -9,9 +9,9 @@ html {
 body {
   padding-top: 8.9rem;
 }
-@media (max-width: 979px) {
+@media (max-width: 500px) {
   body {
-    padding-top: 8.9rem;
+    padding-top: 1rem;
   }
 }
 
@@ -454,13 +454,18 @@ i.fa-times {
 }
 
 .story-text {
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 .story-text p {
   font-size: 120%;
   font-weight: 300;
   color: #fff;
+}
+
+.story-text p.quote {
+  font-style: italic;
+  padding: 2rem;
 }
 
 .light-background p {
