@@ -56,7 +56,6 @@ $(function() {
   $("li").each(function(index) {
     var navItem = $(this).text().toLowerCase();;
     var re = new RegExp(navItem);
-    console.log(navItem);
     if (re.test(window.location.href)) {
       $(this).addClass("button");
     } else if (/index/.test(window.location.href) && navItem === "home") {

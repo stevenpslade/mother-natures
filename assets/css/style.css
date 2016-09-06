@@ -334,6 +334,17 @@ ul#photo-grid li {
   transition: all .2s ease-in-out;
 }
 
+@media (max-width:500px) {
+    ul#photo-grid {
+      padding: 0;
+    }
+
+    ul#photo-grid li {
+    overflow: visible;
+    height: auto;
+  }
+}
+
 #photo-grid li:hover {
   transform: scale(1.1);
   z-index: 1;
