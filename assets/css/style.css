@@ -325,10 +325,6 @@ img {
   height: 25em;
 }
 
-#location-container .row > div {
-  padding: 4%;
-}
-
 #location-container p {
   font-weight: 300;
   font-size: 1.3em;
@@ -495,7 +491,7 @@ i.fa-times {
   color: #000;
 }
 
-@media (max-width:767px) {
+@media (max-width:800px) {
   .about-banner {
     height: auto;
   }
