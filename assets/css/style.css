@@ -8,6 +8,7 @@ html {
 
 body {
   padding-top: 8.9rem;
+  height: 100%;
 }
 @media (max-width: 500px) {
   body {
@@ -48,8 +49,15 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media(max-width:767px){
-  .background-overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/ceasar-salad.jpg") no-repeat center center fixed; 
+  .banner-content {
+    padding: 20% 0 20% 0;
+    height: 100%!important;
+    min-height: 100%!important;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/ceasar-salad.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -129,6 +137,12 @@ a, a:hover {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #8cc63e;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+  }
 }
 /*end collapsed menu*/
 .navbar > .container {
@@ -463,10 +477,11 @@ i.fa-times {
 
 .story-text {
   margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .story-text p {
-  font-size: 120%;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #fff;
 }
@@ -478,6 +493,17 @@ i.fa-times {
 
 .light-background p {
   color: #000;
+}
+
+@media (max-width:767px) {
+  .about-banner {
+    height: auto;
+  }
+
+  .about-content-break h1 {
+    font-size: 2rem;
+    padding: 2.5rem;
+  }
 }
 
 /* end about page */
