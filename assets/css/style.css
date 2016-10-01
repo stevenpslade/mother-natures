@@ -272,7 +272,8 @@ img {
 }
 
 .row .button:hover {
-  color: #8cc63e;
+  color: #fff;
+  background-color: #8cc63e;
 }
 /* end home page content */
 
@@ -398,6 +399,7 @@ ul#photo-grid li {
 a.controls i {
   font-size: 4rem;
   color: white!important;
+  cursor:pointer;
 }
 
 i.fa-times {
@@ -405,6 +407,7 @@ i.fa-times {
   font-size: 4rem;
   color: white;
   right: 3rem;
+  cursor:pointer;
 }
 /*end modal*/
 
