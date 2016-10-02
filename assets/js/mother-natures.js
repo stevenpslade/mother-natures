@@ -3,20 +3,21 @@ $(document).on('click', 'i.fa-times', function() {
 });
 
 $("body").keydown(function(e) {
-  if(e.which == 37) { // left     
-      $("a.previous").trigger("click");
+  if(e.which == 37 && $('a.previous').is(':visible')) { // left     
+      $('a.previous').trigger('click');
   }
-  else if(e.which == 39) { // right     
-      $("a.next").trigger("click");
+  else if(e.which == 39 && $('a.next').is(':visible')) { // right     
+      $('a.next').trigger('click');
   }
   else if(e.which == 27) { // esc   
-      $(".modal-wrapper").hide();
+      $('.modal-wrapper').hide();
   }
 });
         
 $(document).on('click', 'a.controls', function() {
   var index = $(this).attr('href');
-  var src = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
+  var tnSrc = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
+  var src = tnSrc.replace(/_tn/, '');
   $('.modal img').attr('src', src);
 
   //increment and decrement that next and previous button index
@@ -79,7 +80,8 @@ $(function() {
   //photo viewer modal for desktop only
   var width = $(window).width();
   $("#photo-grid li img").on("click", function() {
-    var src = $(this).attr('src');
+    var tnSrc = $(this).attr('src');
+    var src = tnSrc.replace(/_tn/, '');
     var img = '<div class="modal"><img src="' + src + '"/></div>';
 
     var index = $(this).parent('li').index();
@@ -93,8 +95,13 @@ $(function() {
     if (width > 425) {
       $(".modal-wrapper").html(html).show();
     }
-    //this will hide or show the correct arrows:
-    $('a.controls').trigger('click');
+
+    if (index !== 0) {
+      //this will hide or show the correct arrows:
+      $('a.controls').trigger('click');
+    } else {
+      $('a.previous').hide();
+    }
   });
 
 });
