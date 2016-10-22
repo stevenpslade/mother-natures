@@ -13,9 +13,20 @@ $("body").keydown(function(e) {
       $('.modal-wrapper').hide();
   }
 });
-        
+
+function loadNextOrPrevImg(index, imgId) {
+  if (index > 0 && index < 29) {
+    var tnSrc = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
+    var src = tnSrc.replace(/_tn/, '');
+    $(imgId).attr('src', src);
+  }
+}
+
+var globalIndex;
+
 $(document).on('click', 'a.controls', function() {
   var index = $(this).attr('href');
+  globalIndex = index;
   var tnSrc = $('ul#photo-grid li:nth-child('+ index +') img').attr('src');
   var src = tnSrc.replace(/_tn/, '');
   $('.modal img').attr('src', src);
@@ -23,6 +34,9 @@ $(document).on('click', 'a.controls', function() {
   //increment and decrement that next and previous button index
   var newPrevIndex = parseInt(index) - 1;
   var newNextIndex = parseInt(newPrevIndex) + 2;
+
+  loadNextOrPrevImg(newNextIndex, '#nextImg');
+  loadNextOrPrevImg(newPrevIndex, '#prevImg');
    
   if($(this).hasClass('previous')){
       $(this).attr('href', newPrevIndex);
@@ -49,9 +63,8 @@ $(document).on('click', 'a.controls', function() {
 
  return false;
 });
-
-$(function() {
   
+$(function() {
   // switch green line depending on which page you are viewing
   // possibly make button class present but hidden to avoid choppy entrance
   $("li").each(function(index) {
@@ -59,7 +72,7 @@ $(function() {
     var re = new RegExp(navItem);
     if (re.test(window.location.href)) {
       $(this).addClass("button");
-    } else if (/index/.test(window.location.href) && navItem === "home") {
+    } else if (location.pathname === "/" && navItem.includes("home")) {
       $(this).addClass("button");
     } else if (/about/.test(window.location.href) && navItem.includes("about")) {
       $(this).addClass("button");
@@ -78,13 +91,13 @@ $(function() {
   });
 
   //photo viewer modal for desktop only
-  var width = $(window).width();
+  // var width = $(window).width();
   $("#photo-grid li img").on("click", function() {
     var tnSrc = $(this).attr('src');
     var src = tnSrc.replace(/_tn/, '');
     var img = '<div class="modal"><img src="' + src + '"/></div>';
-
     var index = $(this).parent('li').index();
+    globalIndex = index;
     var rightArrow = '<a class="controls next" href="'+ (index+2) + '"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>';
     var leftArrow = '<a class="controls previous" href="' + (index) + '"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>';
     var closeIcon = '<i class="fa fa-times" aria-hidden="true"></i>';
@@ -92,15 +105,34 @@ $(function() {
     var html = closeIcon + leftArrow + img + rightArrow;
 
     //give img and show the model
-    if (width > 425) {
-      $(".modal-wrapper").html(html).show();
-    }
+    $(".modal-wrapper").html(html).show();
 
     if (index !== 0) {
       //this will hide or show the correct arrows:
       $('a.controls').trigger('click');
     } else {
       $('a.previous').hide();
+    }
+  });
+
+  //mobile functionality for photo modals
+  $(".modal-wrapper").on( "swiperight", function() {
+    if (globalIndex !== '1') {
+      $('.modal').animate({left: "100%"},350, function() {
+        $('.modal').css("left", "-100%")
+        $('a.previous').trigger('click');
+      });
+      $('.modal').animate({left: "0%"},350);
+    }
+  });
+
+  $(".modal-wrapper").on( "swipeleft", function() {
+    if (globalIndex !== '28') {
+      $('.modal').animate({left: "-100%"},350, function() {
+        $('.modal').css("left", "100%") 
+        $('a.next').trigger('click');
+      });
+      $('.modal').animate({left: "0%"},350);
     }
   });
 
